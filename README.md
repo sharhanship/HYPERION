@@ -1,0 +1,1 @@
+Add the database in phpmyadmin. You can run the site with a launcher like: wamp, xamp, mamp.
