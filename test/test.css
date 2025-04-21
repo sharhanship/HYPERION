@@ -1,0 +1,376 @@
+footer {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: block;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.353);
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding-top: 20px;
+    background: url('../gif/cybercity11.gif') no-repeat center center/cover;
+    user-select: none;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 1px;
+
+}
+
+.footer-container1 {
+    display: flex;
+    user-select: none;
+}
+
+.footer-container2 {
+    display: block;
+    user-select: none;
+    height: 100%;
+}
+
+.orgpinfooter {
+    background: rgba(0, 0, 0, 0.449);
+    backdrop-filter: blur(20px);
+    border-radius: 5px;
+    width: 100%;
+    height: 50px;
+}
+
+.pforfooter {
+    font-size: 30px;
+    direction: ltr;
+}
+
+.footer-box-us {
+    flex: 1;
+    margin-top: 100px;
+    margin-right: 40px;
+    min-width: 200px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.639);
+    backdrop-filter: blur(20px);
+    border-radius: 5px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    height: 170px;
+}
+
+.footer-box-us :last-child {
+    border-right: none;
+
+}
+
+.footer-box-us h3 {
+    margin-bottom: 10px;
+    font-size: 30px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.219);
+    padding-bottom: 10px;
+}
+
+.footer-box-media {
+    flex: 1;
+    margin-top: 100px;
+    margin-right: 40px;
+    min-width: 400px;
+    text-align: center;
+
+    background: rgba(0, 0, 0, 0.639);
+    backdrop-filter: blur(20px);
+    border-radius: 5px;
+    height: 150px;
+    transition: transform 0.3s, box-shadow 0.3s;
+
+
+}
+
+.footer-box-media :last-child {
+    border-right: none;
+
+}
+
+.footer-box-media h3 {
+    margin-bottom: 10px;
+    font-size: 30px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.219);
+    padding-bottom: 10px;
+}
+
+.footer-box-acc {
+    flex: 1;
+    margin: 50px;
+    min-width: 650px;
+    text-align: center;
+    padding-right: 20px;
+    background: rgba(0, 0, 0, 0.353);
+    backdrop-filter: blur(20px);
+    border-radius: 5px;
+    transition: transform 0.3s, box-shadow 0.3s;
+
+}
+
+
+.footer-box-acc :last-child {
+    border-right: none;
+
+}
+
+.footer-box-acc h3 {
+    margin-bottom: 10px;
+    font-size: 30px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.219);
+    padding-bottom: 10px;
+}
+
+.footer-box-acc ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    width: 40%;
+    margin-left: 110px;
+
+}
+
+.footer-box-acc ul li {
+    margin: 10px 0;
+
+
+}
+
+.footer-box-acc ul li a i {
+    margin-left: 10px;
+
+}
+
+
+.license-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 103%;
+    padding: 20px;
+    border-radius: 5px;
+
+}
+
+.license {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 10px;
+    padding: 20px;
+    border-radius: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+.license:hover {
+
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.license img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.license p {
+    margin: 0;
+    font-size: 1.2em;
+    color: #fff;
+}
+
+.pforusbox {
+    margin: 0;
+    font-size: 1.2em;
+    color: #fff;
+}
+
+.license:hover {
+    transform: scale(1.05);
+}
+
+.license img:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 80px rgba(255, 255, 255, 0.8)) drop-shadow(0 0 10px rgba(255, 255, 255, 0.8));
+}
+
+.divorg-us {
+    display: flex;
+    justify-content: center;
+}
+
+.us-logo img {
+    width: 50px;
+    height: auto;
+    margin: 0 10px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    border-radius: 5px;
+}
+
+.divorg-media-logos {
+    display: flex;
+    justify-content: center;
+    padding-left: 50px;
+    padding-bottom: 10px;
+}
+
+.media-logo {
+    margin-left: -40px;
+
+}
+
+.media-logo img {
+    width: 80px;
+    height: auto;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    border-radius: 5px;
+}
+
+.div-serviceslogo {
+    display: flex;
+    justify-content: center;
+}
+
+/* .services-logo img{
+    width: 240px;
+    height: auto;
+    margin: 0 10px; 
+    transition: transform 0.3s ease, filter 0.3s ease;
+    border-radius: 5px;
+} */
+
+.logousingesye {
+    width: 300px;
+    height: auto;
+    margin: 0 50px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    border-radius: 5px;
+}
+
+.logohelpalltime {
+    width: 350px;
+    height: auto;
+    margin: 0 10px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    border-radius: 5px;
+}
+
+.logobshelpfree {
+    width: 420px;
+    height: auto;
+    margin: 0 10px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    border-radius: 5px;
+}
+
+
+.footer-box-services {
+    flex: 1;
+    margin: 50px;
+    min-width: 200px;
+    text-align: center;
+    padding-right: 20px;
+    background: rgba(0, 0, 0, 0.639);
+    backdrop-filter: blur(20px);
+    border-radius: 5px;
+    height: 450px;
+}
+
+
+.footer-box-services:last-child {
+    border-right: none;
+}
+
+.h3fortitelboxservices {
+    margin-bottom: 10px;
+    font-size: 30px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.219);
+    padding-bottom: 10px;
+}
+
+.h3forlogoservices {
+    margin-bottom: 10px;
+    font-size: 30px;
+    padding-bottom: 10px;
+
+}
+
+.h3forservices {
+    margin-bottom: 10px;
+    font-size: 30px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.219);
+    padding-bottom: 10px;
+    font-size: 30px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #000000;
+    text-shadow:
+        0 0 5px #ffffff,
+        0 0 10px #ffffff,
+        0 0 20px #ffffff,
+        0 0 40px #ffffff,
+        0 0 80px #ffffff;
+}
+
+
+
+.logotube:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.8)) drop-shadow(0 0 10px rgba(255, 0, 0, 1));
+}
+
+.logoinstagram:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 80px rgba(255, 255, 255, 0.8)) drop-shadow(0 0 10px rgb(255, 145, 0));
+}
+
+.logofacebook:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 80px rgba(255, 255, 255, 0.8)) drop-shadow(0 0 10px rgb(0, 21, 255));
+}
+
+.logocall:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 80px rgba(255, 255, 255, 0.8)) drop-shadow(0 0 10px rgb(255, 255, 255));
+}
+
+.logoaboutus:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 80px rgba(255, 255, 255, 0.8)) drop-shadow(0 0 10px rgb(255, 255, 255));
+}
+
+.logousingesye:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.8)) drop-shadow(0 0 10px rgb(0, 255, 251));
+    cursor: default;
+}
+
+.logohelpalltime:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.8)) drop-shadow(0 0 10px rgb(255, 0, 89));
+    cursor: default;
+}
+
+.logobshelpfree:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.8)) drop-shadow(0 0 10px rgb(255, 157, 0));
+    cursor: default;
+}
+
+.logobshelpfree {
+    width: 300px;
+    height: 300px;
+}
+
+
+

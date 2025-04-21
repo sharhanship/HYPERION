@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hyperion-adminpanel</title>
+  <link rel="stylesheet" href="../alphaside/adminpage.css">
+  <link rel="icon" href="../image/mainlogo/mainlogoinhead.png" type="image/x-icon">
+</head>
+
+<body>
+  <header>
+    <a href="http://localhost/HYPERION/"><button class="logout-btn" id="logout-btn">خروج از حساب و بازگشت به حالت عادی</button></a>
+    
+    <nav>
+      <ul>
+        <li><a href="#user-list" class="nav-link active">لیست کاربران</a></li>
+        <li><a href="#request-list" class="nav-link">لیست درخواست‌ها</a></li>
+        <li><a href="#news-form" class="nav-link">انتشار خبر</a></li>
+      </ul>
+    </nav>
+
+    <div class="titelinheader">Panel Admin Hyperion</div>
+  </header>
+
+  <main>
+    <section id="user-list" class="section">
+      <h2 class="h2intitelpart">لیست کاربران</h2>
+
+      <div class="user-list-container">
+        <table>
+          <thead>
+            <tr>
+              <th>نام کاربری</th>
+              <th>ایمیل</th>
+              <th>پسورد</th>
+              <th>عملیات</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><input type="text" value="user1" class="cyber-input editable" disabled></td>
+              <td><input type="email" value="user1@example.com" class="cyber-input editable" disabled></td>
+              <td><input type="text" value="password123" class="cyber-input editable" disabled></td>
+              <td>
+                <span class="status-dot online"></span>
+                <span class="status-text">online</span>
+              </td>
+              <td>
+                <button class="cyber-button edit-btn">ویرایش</button>
+                <button class="cyber-button save-btn hidden">ذخیره</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="request-list" class="section">
+      <h2 class="h2intitelpart">لیست درخواست‌ها</h2>
+      <div class="order-list-container">
+          <table>
+              <thead>
+                  <tr>
+                      <th>نام کاربر</th>
+                      <th>نوع درخواست</th>
+                      <th>جزئیات</th>
+                      <th>تاریخ و ساعت</th>
+                      <th>شماره تلفن</th>
+                      <th>عملیات</th>
+                  </tr>
+              </thead>
+              <tbody>
+                 
+              </tbody>
+          </table>
+      </div>
+  </section>
+
+  <section id="news-form" class="section">
+    <h2 class="h2intitelpart">انتشار خبر جدید</h2>
+    <form>
+        <div class="input-container">
+            <input type="text" placeholder="موضوع خبر" class="cyber-input" required>
+        </div>
+        <div class="input-container">
+            <input type="text" placeholder="نام نویسنده" class="cyber-input" required>
+        </div>
+        <div class="input-container">
+            <input type="datetime-local" class="cyber-input" required>
+        </div>
+        <div class="input-container">
+            <textarea placeholder="متن خبر..." class="cyber-input" required></textarea>
+        </div>
+        <button type="submit" class="cyber-button">انتشار</button>
+    </form>
+</section>
+
+<section class="news-list"></section>
+
+  </main>
+
+  <footer>
+    <div class="div-footer-pinadminpanel">
+      <p class="pinfooterinadminpage">تمامی حقوق مادی و معنوی این صفحه برای مدیریت Hyperion است .</p>
+      <p class="pinfooterinadminpage">هرگونه کپی برداری و استفاده نادرست از اطلاعات پیگرد قانونی دارد.</p>
+    </div>
+  </footer>
+  <script src="http://localhost/HYPERION/alphaside/adminpanel.js"></script>
+ 
+</body>
+
+</html>

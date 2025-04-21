@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyperion-mainpage</title>
+    <link rel="stylesheet" href="http://localhost/HYPERION/css/indexforphone.css">
+    <link rel="icon" href="../image/mainlogo/mainlogoinhead.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="orientation-warning">
+        لطفاً دستگاه خود را به حالت عمودی بچرخانید!
+    </div>
+
+    <header>
+        <h1 class="glitch" data-text="hyperion">Hyperion</h1>
+        <div class="menu-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <nav class="menu">
+        <ul>
+            <li><a href="http://localhost/HYPERION/html/indexforphone.html">صفحه اصلی</a></li>
+            <li><a href="http://localhost/HYPERION/html/aboutusforphonepage.html">درباره ما</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="message">
+            <p>برای استفاده از خدمات ما و تمام سایت لطفا با لپ تاپ یا کامپیوتر یا تبلت وارد این صفحه شوید</p>
+        </div>
+
+        <div class="slider">
+            <div class="slides">
+                <img src="http://localhost/HYPERION/image/imgforphonepagehome/baner1.png" alt="بنر1">
+                <img src="http://localhost/HYPERION/image/imgforphonepagehome/baner2.png" alt="بنر2">
+                <img src="http://localhost/HYPERION/image/imgforphonepagehome/baner3.png" alt="بنر3">
+            </div>
+        </div>
+
+        <section class="services">
+            <h2>خدمات ما</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>ساخت نرم افزار های سیستمی</h3>
+                </div>
+                <div class="card">
+                    <h3>ساخت نرم افزار های موبایل</h3>
+                </div>
+                <div class="card">
+                    <h3>ساخت وبسایت های سازمانی</h3>
+                </div>
+                <div class="card">
+                    <h3>ساخت وبسایت های شخصی</h3>
+                </div>
+                <div class="card">
+                    <h3>پاسخ به تمام سوالات فنی شما</h3>
+                </div>
+                <div class="card">
+                    <h3>پشتیبانی از پروژه های شما</h3>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section licenses">
+                <h3>مجوزها و گواهی‌ها</h3>
+                <div class="license-images">
+                    <img src="http://localhost/HYPERION/image/imgforfooterac/namad1-removebg-preview.png" alt="مجوز ۱">
+                    <img src="http://localhost/HYPERION/image/imgforfooterac/namad2-removebg-preview.png" alt="مجوز ۲">
+                    <img src="http://localhost/HYPERION/image/imgforfooterac/namad3-removebg-preview.png" alt="مجوز ۳">
+                </div>
+            </div>
+
+            <div class="footer-section useful-links">
+                <h3>لینک‌های مفید</h3>
+                <ul>
+                    <li><a href="#">قوانین و مقررات</a></li>
+                    <li><a href="#">حریم خصوصی</a></li>
+                    <li><a href="#">سوالات متداول</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section social-media">
+                <h3 class="h3formedia">ما را دنبال کنید</h3>
+                <div class="social-icons">
+                    <a href="#"><img src="http://localhost/HYPERION/image/imgformediainfooter/logoapp/instagramlogo.png"
+                            alt="اینستاگرام"></a>
+                    <a href="#"><img src="http://localhost/HYPERION/image/imgformediainfooter/logoapp/tubelogo.png"
+                            alt="تلگرام"></a>
+                    <a href="#"><img src="http://localhost/HYPERION/image/imgformediainfooter/logoapp/facebooklogo.png"
+                            alt="توییتر"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>تمامی حقوق محفوظ است. © ۲۰۲۳ Hyperion</p>
+        </div>
+    </footer>
+
+    <script>
+
+        function checkScreenSize() {
+            if (window.innerWidth > 900) {
+                window.location.href = "http://localhost/HYPERION/";
+            }
+        }
+
+
+        window.addEventListener("resize", checkScreenSize);
+
+
+        checkScreenSize();
+
+        function toggleMenu() {
+            const menu = document.querySelector('.menu');
+            const menuIcon = document.querySelector('.menu-icon');
+            menu.classList.toggle('active');
+            menuIcon.classList.toggle('active');
+        }
+
+
+        document.addEventListener('click', function (event) {
+            const menu = document.querySelector('.menu');
+            const menuIcon = document.querySelector('.menu-icon');
+            if (!menu.contains(event.target) && !menuIcon.contains(event.target)) {
+                menu.classList.remove('active');
+                menuIcon.classList.remove('active');
+            }
+        });
+
+
+        let slider = document.querySelector('.slider');
+        let slides = document.querySelector('.slides');
+        let touchStartX = 0;
+        let touchEndX = 0;
+        let currentIndex = 0;
+
+
+        slider.addEventListener('touchstart', (e) => {
+            touchStartX = e.touches[0].clientX;
+        });
+
+
+        slider.addEventListener('touchmove', (e) => {
+            touchEndX = e.touches[0].clientX;
+        });
+
+
+        slider.addEventListener('touchend', () => {
+            if (touchEndX < touchStartX) {
+                nextSlide();
+            } else if (touchEndX > touchStartX) {
+                prevSlide();
+            }
+        });
+
+
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % slides.children.length;
+            updateSlider();
+        }
+
+
+        function prevSlide() {
+            currentIndex = (currentIndex - 1 + slides.children.length) % slides.children.length;
+            updateSlider();
+        }
+
+
+        function updateSlider() {
+            let slideWidth = document.querySelector('.slides img').clientWidth;
+            slides.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+        }
+
+
+        setInterval(nextSlide, 100000);
+    </script>
+</body>
+
+</html>

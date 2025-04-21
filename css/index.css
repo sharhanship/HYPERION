@@ -1,0 +1,290 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    color: #333;
+}
+
+
+.container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 20px;
+}
+
+ .fade-in-scroll {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1.5s ease, transform 1.5s ease;
+}
+
+.fade-in-scroll.show {
+    opacity: 1;
+    transform: translateY(0);
+} 
+
+
+.introduction {
+    text-align: center;
+    padding: 50px 20px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    background: url('../gif/cybercity9.gif') no-repeat center center/cover;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    margin-top: 80px;
+    align-items: center;
+    width: 95%;
+    height: 500px;
+    margin-left: 40px;
+}
+
+
+
+.labelintro {
+    background: rgba(0, 0, 0, 0.582);
+    backdrop-filter: blur(15px);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    direction: rtl;
+    width: 70%;
+    height: 250px;
+    margin-left: 200px;
+    margin-top: 50px;
+    border-radius: 5px;
+    padding-top: 40px;
+}
+
+
+.labelintro h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    user-select: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@keyframes glitch {
+    0% { clip-path: inset(0 0 0 0); transform: translate(0, 0); }
+    20% { clip-path: inset(10% 0 30% 0); transform: translate(-2px, 1px); }
+    40% { clip-path: inset(30% 0 10% 0); transform: translate(2px, -1px); }
+    60% { clip-path: inset(5% 0 50% 0); transform: translate(-1px, 2px); }
+    80% { clip-path: inset(50% 0 5% 0); transform: translate(1px, -2px); }
+    100% { clip-path: inset(0 0 0 0); transform: translate(0, 0); }
+  }
+  
+  @keyframes glitch-shadow {
+    0% { text-shadow: -2px 0 rgb(255, 170, 0), 2px 0 rgb(166, 0, 255); }
+    50% { text-shadow: -3px 0 rgb(166, 0, 255), 3px 0 rgb(255, 170, 0); }
+    100% { text-shadow: -2px 0 rgb(255, 170, 0), 2px 0 rgb(166, 0, 255); }
+  }
+  
+  .glitch {
+    position: relative;
+    font-size: 3rem;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    
+    animation: glitch-shadow 3s infinite linear alternate;
+  }
+  
+  .glitch::before,
+  .glitch::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: white;
+    background: transparent;
+    overflow: hidden;
+    z-index: -1;
+  }
+  
+  .glitch::before {
+    left: 2px;
+    text-shadow: -2px 0 red;
+    animation: glitch 3s infinite linear alternate;
+  }
+  
+  .glitch::after {
+    left: -2px;
+    text-shadow: 2px 0 cyan;
+    animation: glitch 3s infinite linear alternate-reverse;
+  }
+  
+
+
+.labelintro p {
+    font-size: 1.2em;
+}
+
+
+.btnnewslink {
+    color: #ffffff;
+    background-color: transparent;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    width: 100%;
+    display: inline-block;
+    text-decoration: none;
+    color: #000000;
+    position: relative;
+    padding: 12px 30px;
+    border-radius: 5px;
+    transition: color 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    font-family: 12px;
+}
+
+.btnnewslink {
+    color: #000000;
+    width: 50%;
+    cursor: pointer;
+}
+
+.btnnewslink:hover {
+    background-color: #000000;
+    box-shadow: 0 0 10px #000000, 0 0 20px #000000, 0 0 40px #000000;
+    text-shadow: 0 0 10px #000000, 0 0 20px #000000, 0 0 30px #000000;
+    color: #ffffff;
+    text-shadow:
+    0 0 5px #0066ff,
+    0 0 10px #0066ff,
+    0 0 20px #0066ff,
+    0 0 40px #0066ff,
+    0 0 80px #0066ff;
+}
+
+.labelintro a {
+    font-size: 20px;
+}
+
+.services {
+    text-align: center;
+    padding: 50px 20px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(2px);
+    border-radius: 5px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: url('../gif/cybercity5.gif') no-repeat center center/cover;
+    direction: rtl;
+    width: 95%;
+    margin-left: 40px;
+    user-select: none;
+}
+
+.services h2 {
+    font-size: 2em;
+    margin-bottom: 40px;
+    color: #000000;
+    text-shadow:
+        0 0 5px #ffffff,
+        0 0 10px #ffffff,
+        0 0 20px #ffffff,
+        0 0 40px #ffffff,
+        0 0 80px #ffffff;
+    width: 100%;
+    text-align: center;
+}
+
+.service-card {
+    position: relative;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.549);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-radius: 5px;
+    perspective: 1000px;
+    overflow: hidden;
+}
+
+.service-card:hover {
+    box-shadow: 0 20px 40px rgba(0, 13, 255, 0.3);
+}
+
+.service-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #007bff;
+    
+}
+
+.service-card p {
+    font-size: 1em;
+    margin: 0;
+}
+
+
+.service-card:hover .description {
+    display: block;
+}
+
+.partners {
+    text-align: center;
+    padding: 50px 20px;
+    background: url('../gif/sadengir.gif') no-repeat center center/cover;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    width: 95%;
+    margin-left: 40px;
+}
+
+.partners h2 {
+    font-size: 2em;
+    margin-bottom: 40px;
+    color: #000000;
+    text-shadow:
+        0 0 5px #ffffff,
+        0 0 10px #ffffff,
+        0 0 20px #ffffff,
+        0 0 40px #ffffff,
+        0 0 80px #ffffff;
+}
+
+.partner {
+    display: inline-block;
+    margin: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: rgba(0, 0, 0, 0.549);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding-bottom: 10px;
+    width: 200px;
+    height: 250px;
+    padding-top: 10px;
+    cursor: pointer;
+
+}
+
+.partner:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.partner img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.partner p {
+    font-size: 1.2em;
+    color: #ffffff;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}

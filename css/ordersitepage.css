@@ -1,0 +1,263 @@
+body {
+    background-color: #121212;
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    height: 100%;
+}
+
+
+.fade-in-section {
+    flex-grow: 1;
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    overflow-y: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 200px;
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeInAnimation 1.5s ease-in-out forwards;
+}
+
+
+@keyframes fadeInAnimation {
+    from {
+        opacity: 0;
+        transform: translateY(20px); 
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+} 
+
+.ordersite-section {
+    width: 700px;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    border-left: 2px solid rgba(255, 255, 255, 0.3);
+    margin-top: 80px;
+    margin-bottom: 70px;
+    background: url('../gif/cybercity6.gif') no-repeat center center/cover;
+    user-select: none;
+    margin-right: 90px;
+}
+
+.divglass {
+    background-color: #00000096;
+    backdrop-filter: blur(5px);
+    border-left: 2px solid rgba(255, 255, 255, 0.3);
+    padding: 30px;
+    border-radius: 10px;
+    width: 600px;
+    direction: rtl;
+    margin-left: 10px;
+
+}
+
+.titelforordersitebox {
+    text-align: right;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #fff;
+    text-shadow:
+        0 0 5px #003cffa8,
+        0 0 10px #003cffa8,
+        0 0 20px #003cffa8,
+        0 0 40px #003cffa8,
+        0 0 80px #003cffa8;
+}
+
+.pforhelpform {
+    text-align: right;
+    font-size: 15px;
+    margin-bottom: 30px;
+    color: #ffffff;
+}
+
+.input-container {
+    position: relative;
+    margin-top: 40px;
+    direction: rtl;
+    width: 550px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #444;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-size: 14px;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+    outline: none;
+    color: #fff;
+    text-align: right;
+}
+
+input:focus,
+input:hover {
+    border-color: #ffffff;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+input:focus+label,
+input:hover+label,
+input:not(:placeholder-shown)+label {
+    top: -20px;
+    right: 10px;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+label {
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+    pointer-events: none;
+    font-size: 16px;
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #444;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-size: 14px;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+    outline: none;
+    color: #fff;
+    text-align: right;
+    resize: none;
+}
+
+textarea:focus,
+textarea:hover {
+    border-color: #ffffff;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+textarea:focus+label,
+textarea:hover+label,
+textarea:not(:placeholder-shown)+label {
+    top: -20px;
+    right: 10px;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.div-btnsendandback {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 550px;
+}
+
+.btnsendinordersitepage {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: inline-block;
+    text-decoration: none;
+    background: rgba(255, 255, 255, 0.073);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(2px);
+    padding: .4em 0.8em;
+    border-radius: 10px;
+    position: relative;
+    isolation: isolate;
+    color: #fff;
+    font-size: 15px;
+    user-select: none;
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+    transition: all 0.3s ease;
+    margin-right: 10px;
+}
+
+.btnsendinordersitepage:hover {
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.btnsendinordersitepage::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    background-color: #003cff27;
+    inset: 0;
+    scale: .0 1;
+    border-radius: 10px;
+    transition: scale 600ms;
+}
+
+.btnsendinordersitepage:hover::after,
+.btnsendinordersitepage:focus-visible::after {
+    scale: 1 1;
+}
+
+
+.btnbackinordersitepage {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: inline-block;
+    text-decoration: none;
+    background: rgba(255, 255, 255, 0.073);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(2px);
+    padding: .4em 0.8em;
+    border-radius: 10px;
+    position: relative;
+    isolation: isolate;
+    color: #fff;
+    font-size: 15px;
+    user-select: none;
+    width: 50%;
+    margin-top: 10px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.btnbackinordersitepage:hover {
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.btnbackinordersitepage::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    background-color: #ff000027;
+    inset: 0;
+    scale: .0 1;
+    border-radius: 10px;
+    transition: scale 600ms;
+}
+
+.btnbackinordersitepage:hover::after,
+.btnbackinordersitepage:focus-visible::after {
+    scale: 1 1;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}

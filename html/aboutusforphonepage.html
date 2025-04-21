@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyperion-aboutus</title>
+    <link rel="stylesheet" href="http://localhost/HYPERION/css/indexforphone.css">
+    <link rel="stylesheet" href="http://localhost/HYPERION/css/aboutusforphonepage.css">
+    <link rel="icon" href="../image/mainlogo/mainlogoinhead.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="orientation-warning">
+        لطفاً دستگاه خود را به حالت عمودی بچرخانید!
+    </div>
+
+    <header>
+        <h1 class="glitch" data-text="hyperion">Hyperion</h1>
+        <div class="menu-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <nav class="menu">
+        <ul>
+            <li><a href="http://localhost/HYPERION/html/indexforphone.html">صفحه اصلی</a></li>
+            <li><a href="http://localhost/HYPERION/html/aboutusforphonepage.html">درباره ما</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="about-section">
+            <h2>درباره ما</h2>
+            <p>
+                ما در Hyperion تلاش می‌کنیم تا با ارائه بهترین نرم‌افزارها و خدمات، تجربه‌ای بی‌نظیر برای کاربران خود
+                ایجاد کنیم. تیم ما متشکل از متخصصان با تجربه و خلاق است که همواره به دنبال نوآوری و بهبود هستند.
+            </p>
+        </div>
+
+        <div class="team-section">
+            <h2>تیم ما</h2>
+            <div class="team-members">
+                <div class="member">
+                    <img src="http://localhost/HYPERION/image/imgforteammember/ali.jpg" alt="همکار ۱">
+                    <h3>Ali sharhan</h3>
+                    <p>برنامه نویس بک اند</p>
+                </div>
+                <div class="member">
+                    <img src="http://localhost/HYPERION/image/imgforteammember/setiz.jpg" alt="همکار ۲">
+                    <h3>setiz 7</h3>
+                    <p>برنامه نویس فرانت اند</p>
+                </div>
+                <div class="member">
+                    <img src="http://localhost/HYPERION/image/imgforteammember/yas.jpg" alt="همکار ۳">
+                    <h3>yas</h3>
+                    <p>وردپرس کار</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="history-section">
+            <h2>تاریخچه</h2>
+            <p>
+                Hyperion در سال ۲۰۲۳ تأسیس شد و از آن زمان تاکنون، به یکی از پیشروهای صنعت نرم‌افزار تبدیل شده است. ما
+                به مشتریان خود در سراسر جهان خدمات ارائه می‌دهیم و همواره به کیفیت و رضایت مشتریان خود اهمیت می‌دهیم.
+            </p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section licenses">
+                <h3>مجوزها و گواهی‌ها</h3>
+                <div class="license-images">
+                    <img src="http://localhost/HYPERION/image/imgforfooterac/namad1-removebg-preview.png" alt="مجوز ۱">
+                    <img src="http://localhost/HYPERION/image/imgforfooterac/namad2-removebg-preview.png" alt="مجوز ۲">
+                    <img src="http://localhost/HYPERION/image/imgforfooterac/namad3-removebg-preview.png" alt="مجوز ۳">
+                </div>
+            </div>
+
+            <div class="footer-section useful-links">
+                <h3>لینک‌های مفید</h3>
+                <ul>
+                    <li><a href="http://localhost/HYPERION/html/indexforphone.html">صفحه اصلی</a></li>
+                    <li><a href="http://localhost/HYPERION/html/aboutusforphonepage.html">درباره ما</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section social-media">
+                <h3 class="h3formedia">ما را دنبال کنید</h3>
+                <div class="social-icons">
+                    <a href="#"><img src="http://localhost/HYPERION/image/imgformediainfooter/logoapp/instagramlogo.png" alt="اینستاگرام"></a>
+                    <a href="#"><img src="http://localhost/HYPERION/image/imgformediainfooter/logoapp/tubelogo.png" alt="تلگرام"></a>
+                    <a href="#"><img src="http://localhost/HYPERION/image/imgformediainfooter/logoapp/facebooklogo.png" alt="توییتر"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>تمامی حقوق محفوظ است. © ۲۰۲۳ Hyperion</p>
+        </div>
+    </footer>
+
+    <script>
+        function checkScreenSize() {
+            if (window.innerWidth > 900) {
+                window.location.href = "http://localhost/HYPERION/html/aboutus.html";
+            }
+        }
+
+
+        window.addEventListener("resize", checkScreenSize);
+
+
+        checkScreenSize();
+
+
+        function toggleMenu() {
+            const menu = document.querySelector('.menu');
+            const menuIcon = document.querySelector('.menu-icon');
+            menu.classList.toggle('active');
+            menuIcon.classList.toggle('active');
+        }
+
+        document.addEventListener('click', function (event) {
+            const menu = document.querySelector('.menu');
+            const menuIcon = document.querySelector('.menu-icon');
+            if (!menu.contains(event.target) && !menuIcon.contains(event.target)) {
+                menu.classList.remove('active');
+                menuIcon.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+
+</html>

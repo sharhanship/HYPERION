@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyperion-door</title>
+    <link rel="stylesheet" href="./rlfpage.css">
+    <link rel="icon" href="../image/mainlogo/mainlogoinhead.png" type="image/x-icon">
+    
+</head>
+
+<body>
+   
+    <div id="header"></div>
+    <div class="container">
+        <div class="tab-content">
+            <div class="form login-form active" data-content="login">
+                <h2>ورود</h2>
+                <div class="input-container">
+                    <input type="text" placeholder=" " id="login-username">
+                    <label for="login-username">نام کاربری</label>
+                </div>
+                <div class="input-container">
+                    <input type="password" placeholder=" " id="login-password">
+                    <label for="login-password">رمز عبور</label>
+                </div>
+                <button class="btnsendinordersitepage" id="login-button">ورود</button>
+                <p>رمز عبور را فراموش کردین؟ <a class="ainrlfpage" href="#"
+                        onclick="showForm('forgot-password')">فراموشی رمز عبور</a></p>
+                <p>حساب کاربری ندارید؟ <a class="ainrlfpage" href="#" onclick="showForm('register')">ثبت نام</a></p>
+            </div>
+
+            <div class="form register-form" data-content="register">
+                <h2>ثبت نام</h2>
+                <div class="input-container">
+                    <input type="text" placeholder=" " id="register-username">
+                    <label for="register-username">نام کاربری</label>
+                </div>
+                <div class="input-container">
+                    <input type="email" placeholder=" " id="register-email">
+                    <label for="register-email">ایمیل</label>
+                </div>
+                <div class="input-container">
+                    <input type="password" placeholder=" " id="register-password">
+                    <label for="register-password">رمز عبور</label>
+                </div>
+                <button class="btnsendinordersitepage" id="register-button">ثبت نام</button>
+                <p>حساب کاربری دارید؟ <a class="ainrlfpage" href="#" onclick="showForm('login')">ورود</a></p>
+            </div>
+
+            <div class="form forgot-password-form" data-content="forgot-password">
+                <h2>فراموشی رمز عبور</h2>
+                <div class="input-container">
+                    <input type="tel" placeholder=" " id="forgot-password-phone" maxlength="11">
+                    <label for="forgot-password-phone">شماره تلفن</label>
+                </div>
+                <button class="btnsendinordersitepage" id="forgot-password-button">لطفا شماره را وارد کنید</button>
+                <p>کد 6 رقمی</p>
+                <div class="code-input-container">
+                    <input type="text" maxlength="1" class="code-input" id="code-1">
+                    <input type="text" maxlength="1" class="code-input" id="code-2">
+                    <input type="text" maxlength="1" class="code-input" id="code-3">
+                    <input type="text" maxlength="1" class="code-input" id="code-4">
+                    <input type="text" maxlength="1" class="code-input" id="code-5">
+                    <input type="text" maxlength="1" class="code-input" id="code-6">
+                </div>
+                <p>به یاد آوردید؟ <a class="ainrlfpage" href="#" onclick="showForm('login')">ورود</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer"></div>
+    <script src="http://localhost/HYPERION/js/jackpot.js"></script>
+    <script src="http://localhost/HYPERION/js/jsforheaderandfooterlink.js"></script>
+    <script src="http://localhost/HYPERION/rlf/rlfpage.js"></script>
+    <script src="../js/jsforanimationloadpages.js"></script>
+   
+
+
+
+</body>
+
+</html>

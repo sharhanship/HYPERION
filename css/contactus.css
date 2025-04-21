@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #000;
+    color: #fff;
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 200px);
+    padding: 20px 0;
+    margin-top: 100px;
+    margin-bottom: 120px;
+
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeInAnimation 1.5s ease-in-out forwards;
+}
+
+
+@keyframes fadeInAnimation {
+    from {
+        opacity: 0;
+        transform: translateY(20px); 
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.fade-in-section {
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(5px);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    width: 40%;
+    max-height: 60vh;
+    overflow-y: auto;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    transition: opacity 1s ease-out, box-shadow 0.5s ease, transform 0.5s ease, background 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    scrollbar-width: thin;
+    scrollbar-color: #ffffff #333;
+    background: url('../gif/raneperfect.gif') no-repeat center center/cover;
+}
+
+.fade-in-section:hover {
+    transform: perspective(1000px) rotateY(15deg) rotateX(5deg) scale(1.05);
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.8), 0 0 60px rgba(255, 255, 255, 0.4);
+}
+
+.fade-in-section::-webkit-scrollbar {
+    width: 8px;
+}
+
+.fade-in-section::-webkit-scrollbar-track {
+    background: #333;
+    border-radius: 10px;
+}
+
+.fade-in-section::-webkit-scrollbar-thumb {
+    background-color: #ff4d00;
+    border-radius: 10px;
+    border: 2px solid #333;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cards {
+    background: rgba(0, 0, 0, 0.449);
+    backdrop-filter: blur(5px);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    max-height: 250px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #ff4d00 #333;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    direction: rtl;
+}
+
+.cards::-webkit-scrollbar {
+    width: 8px;
+}
+
+.cards::-webkit-scrollbar-track {
+    background: #333;
+    border-radius: 10px;
+}
+
+.cards::-webkit-scrollbar-thumb {
+    background-color: #ff4d00;
+    border-radius: 10px;
+    border: 2px solid #333;
+}
+
+.cards h1,
+.cards h2 {
+    margin-bottom: 10px;
+    color: #000000;
+    text-align: center;
+    user-select: none;
+    text-shadow:
+        0 0 5px #ffffffec,
+        0 0 10px #ffffffec,
+        0 0 20px #ffffffec,
+        0 0 40px #ffffffec,
+        0 0 80px #ffffffec;
+}
+
+.divbtnincu {
+
+    padding-right: 170px;
+}
+
+.close-menu-btn {
+    display: inline-block;
+    color: #ffffff;
+
+    margin-left: 80px;
+    background-color: transparent;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, text-shadow 0.3s ease;
+    user-select: none;
+}
+
+
+.cards p,
+.cards ul,
+.cards label,
+.cards input,
+.cards textarea {
+    text-align: right;
+}
+
+.close-menu-btn {
+    display: inline-block;
+    color: #ffffff;
+    width: 50%;
+    margin-left: 45px;
+    background-color: transparent;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, text-shadow 0.3s ease;
+}
+
+
+
+.team-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.social-media li::after {
+    content: " .";
+    color: inherit;
+    display: inline;
+    margin-left: 5px;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+    user-select: none;
+}
+
+form input,
+form textarea {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+form textarea {
+    resize: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
