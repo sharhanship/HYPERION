@@ -28,7 +28,7 @@ IDE: VS Code
 Clone the repo:
 
 bash
-git clone https://github.com/your-username/HYPERION.git
+git clone https://github.com/sharhanship/HYPERION.git
 Set up the database:
 
 Import the .sql file (included in /database) to phpMyAdmin.
