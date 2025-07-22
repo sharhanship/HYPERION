@@ -1,58 +1,42 @@
 ![logo](https://github.com/sharhanship/HYPERION/blob/V.1/image/mainlogo/pichyperion.png)
-🌟 HYPERION
-A modern tech-support platform for troubleshooting computer issues, answering technical questions, and offering custom website development services—with robust user accounts and security.
+# 🌐 HYPERION  
+**Modern Tech Support & Web Development Platform**  
 
-https://path/to/screenshot.png <!-- Add a screenshot if possible -->
+![HYPERION Demo](path/to/screenshot.png)  
 
-✨ Key Features
-🛠️ Tech Support Hub: Submit and resolve technical questions.
+---
 
-🚀 Custom Order System: Request tailored websites/services.
+## 📊 Tech Stack Graph  
 
-🔐 Secure Accounts: Personalized user profiles with authentication.
+```plaintext
+Frontend  ┌──────────────┐  Backend  
+          │              │            
+HTML5     ├──────────────┤  PHP  
+CSS3      │  HYPERION    │  MySQL  
+JavaScript└──────────────┘  phpMyAdmin  
+          ▲              ▲            
+          │              │            
+          └─────VS Code─────┘  
+✨ Features
+💬 Q&A Platform: Submit technical questions.
 
-📱 Responsive Design: Works seamlessly on all devices.
+🛒 Custom Orders: Request websites/services.
 
-📊 Admin Dashboard: Manage orders/users (PHP-powered backend).
+🔐 Secure Auth: User accounts with PHP sessions.
 
-🛠️ Tech Stack
-Frontend: HTML5, CSS3, JavaScript (Vanilla)
+📱 Responsive: Mobile-friendly design.
 
-Backend: PHP
-
-Database: MySQL (via phpMyAdmin)
-
-IDE: VS Code
-
-🚀 Setup & Installation
+🛠️ Technologies Used
+Category	Tools
+Frontend	HTML5, CSS3, JavaScript
+Backend	PHP
+Database	MySQL (via phpMyAdmin)
+Development	VS Code, XAMPP/WAMP
+🚀 Quick Start
 Clone the repo:
 
 bash
-git clone https://github.com/sharhanship/HYPERION.git
-Set up the database:
+git clone https://github.com/your-username/HYPERION.git  
+Import database.sql to phpMyAdmin.
 
-Import the .sql file (included in /database) to phpMyAdmin.
-
-Configure PHP:
-
-Update config.php with your database credentials.
-
-Run locally:
-
-Use XAMPP/WAMP to host the project on localhost.
-
-📌 Usage
-For Users:
-
-Sign up, submit questions/orders, and track progress via your dashboard.
-
-For Admins:
-
-Access /admin to manage orders/users (credentials in database/admins.sql).
-
-🔒 Security Highlights
-Prepared statements for SQL queries (anti-injection).
-
-Password hashing (PHP password_hash()).
-
-Session-based authentication.
+Configure config.php with your DB credentials.
