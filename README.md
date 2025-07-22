@@ -1,31 +1,58 @@
 ![logo](https://github.com/sharhanship/HYPERION/blob/V.1/image/mainlogo/pichyperion.png)
-# HYPERION - Advanced Web Design & Support Services
+🌟 HYPERION
+A modern tech-support platform for troubleshooting computer issues, answering technical questions, and offering custom website development services—with robust user accounts and security.
 
-HYPERION delivers premium web design, development, and advanced support services for businesses seeking digital excellence. Our cutting-edge solutions bridge the gap between innovative design and robust functionality.
+https://path/to/screenshot.png <!-- Add a screenshot if possible -->
 
-## 💻 Core Service Offerings
+✨ Key Features
+🛠️ Tech Support Hub: Submit and resolve technical questions.
 
-### **Web Design & Development**
-- Custom responsive website design
-- E-commerce solutions
-- CMS implementations (WordPress, Joomla, Drupal)
-- Single Page Applications (SPA)
+🚀 Custom Order System: Request tailored websites/services.
 
-### **Advanced Support Services**
-- 24/7 technical support
-- Performance optimization
-- Security hardening
-- Regular maintenance packages
+🔐 Secure Accounts: Personalized user profiles with authentication.
 
-### **Specialized Solutions**
-- API development & integration
-- Database architecture
-- Cloud migration services
-- DevOps implementation
+📱 Responsive Design: Works seamlessly on all devices.
 
-## 🛠️ Technical Stack
+📊 Admin Dashboard: Manage orders/users (PHP-powered backend).
 
-```mermaid
-graph LR
-    A[Frontend] --> B[HTML.CSS.JS]
-    D[Backend] --> E[PHP]
+🛠️ Tech Stack
+Frontend: HTML5, CSS3, JavaScript (Vanilla)
+
+Backend: PHP
+
+Database: MySQL (via phpMyAdmin)
+
+IDE: VS Code
+
+🚀 Setup & Installation
+Clone the repo:
+
+bash
+git clone https://github.com/your-username/HYPERION.git
+Set up the database:
+
+Import the .sql file (included in /database) to phpMyAdmin.
+
+Configure PHP:
+
+Update config.php with your database credentials.
+
+Run locally:
+
+Use XAMPP/WAMP to host the project on localhost.
+
+📌 Usage
+For Users:
+
+Sign up, submit questions/orders, and track progress via your dashboard.
+
+For Admins:
+
+Access /admin to manage orders/users (credentials in database/admins.sql).
+
+🔒 Security Highlights
+Prepared statements for SQL queries (anti-injection).
+
+Password hashing (PHP password_hash()).
+
+Session-based authentication.
