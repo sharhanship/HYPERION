@@ -2,8 +2,6 @@
 # 🌐 HYPERION  
 **Modern Tech Support & Web Development Platform**  
 
-![HYPERION Demo](path/to/screenshot.png)  
-
 ---
 
 ## 📊 Tech Stack Graph  
