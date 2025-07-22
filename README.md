@@ -1,4 +1,4 @@
-![logo](https://github.com/sharhanship/HYPERION/blob/V.1/gif/bikrun.gif)
+![logo](https://github.com/sharhanship/HYPERION/blob/V.1/image/mainlogo/pichyperion.png)
 # HYPERION - Advanced Web Design & Support Services
 
 HYPERION delivers premium web design, development, and advanced support services for businesses seeking digital excellence. Our cutting-edge solutions bridge the gap between innovative design and robust functionality.
