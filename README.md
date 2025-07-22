@@ -34,7 +34,7 @@ Development	VS Code, XAMPP/WAMP
 Clone the repo:
 
 bash
-git clone https://github.com/your-username/HYPERION.git  
+git clone https://github.com/sharhanship/HYPERION.git  
 Import database.sql to phpMyAdmin.
 
 Configure config.php with your DB credentials.
